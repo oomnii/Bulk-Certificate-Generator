@@ -1,0 +1,19 @@
+{
+  "course_name": "Python Backend Development",
+  "event_date": "2026-10-08",
+  "issued_by": "Example Academy",
+  "recipients": [
+    {
+      "name": "Aarav Sharma",
+      "email": "aarav@example.com"
+    },
+    {
+      "name": "Priya Patel",
+      "email": "priya@example.com"
+    },
+    {
+      "name": "",
+      "email": "invalid-email"
+    }
+  ]
+}

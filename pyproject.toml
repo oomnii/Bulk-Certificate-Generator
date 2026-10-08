@@ -1,0 +1,32 @@
+[project]
+name = "bulk-certificate-generator"
+version = "1.0.0"
+description = "Backend API that generates certificate PDFs for a list of recipients."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.142.4",
+    "uvicorn==0.54.0",
+    "sqlalchemy==2.1.4",
+    "pydantic==2.13.5",
+    "pydantic-settings==2.15.0",
+    "reportlab==4.5.1",
+    "httpx==0.28.1",
+    "pypdf==6.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "ruff==0.16.10",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008"]
